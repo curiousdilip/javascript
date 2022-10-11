@@ -1,3 +1,4 @@
+//function declaration
 function sing(){
     console.log("Happpy birthday to me!")
 }
