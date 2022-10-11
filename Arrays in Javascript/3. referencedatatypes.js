@@ -34,3 +34,16 @@ console.log(`array2 ${array2}`);
 // reference type is stored in heap ,num2 stored the address of num1, hence num1 value = num2 value
 // let num1 =4
 // let num2= num1
+
+
+// In other way the difference between let and const is misunderstood by const being immutable and let being used for mutable values.
+// But the answer to difference between let and const is re-assinability. 
+const studentName = 'abc';
+studentName = 'def' // it will throw an error because const prohibits re-assigning value to a variable
+
+const studentList = ['abc', 'def', 'ghi'];
+studentList.push('jkl') // it will not throw an error as const allows mutation
+studentList = ['abc', 'def'] // it will thrown an error due to studentList being reassigned a value.
+
+// what if we don't want any mutation on the referenced data types like object.
+// we can in that case use Object.seal() or Object.freeze()
