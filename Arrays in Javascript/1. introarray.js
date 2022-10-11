@@ -20,3 +20,10 @@ console.log(typeof fruits);
 console.log(typeof obj);
 
 //array indexing
+
+// higher order functions for an array
+fruits.includes('orange') // true
+fruits.filter(f => f.length === 6) // ['banana', 'orange', 'grapes']
+fruits.map(f => f.charAt(0).toUpperCase()) // ["A", "B", "O", "P", "G"]
+fruits.some(f => f.length > 6) // true
+fruits.every(f => f.length > 6) // false
