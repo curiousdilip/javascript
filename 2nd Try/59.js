@@ -32,8 +32,8 @@ const userCart = [
   },
 ];
 
-const sumProduct = userCart.reduce((totalPrice, currentValue) => {
-  return totalPrice.price + currentValue;
+const sumProduct = userCart.reduce((totalPrice, currentProduct) => {
+  return totalPrice + currentProduct.price;
 }, 0);
 
 console.log(sumProduct);
