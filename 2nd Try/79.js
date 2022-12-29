@@ -5,16 +5,17 @@ const userMethods = {
   is18: function () {
     return this.age >= 18;
   },
+  sing: function () {
+    return "the first noel";
+  },
 };
 function createUser(firstName, lastName, email, age, address) {
-  const user = {};
+  const user = Object.create(userMethods);
   user.firstName = firstName;
   user.lastName = lastName;
   user.email = email;
   user.age = age;
   user.address = address;
-  user.about = userMethods.about;
-  user.is18 = userMethods.is18;
   return user;
 }
 
@@ -47,5 +48,6 @@ const user4 = createUser(
   "hhajsd, colony, india"
 );
 
+console.log(user1);
 console.log(user1.about());
-console.log(user2.about());
+console.log(user2.sing());
