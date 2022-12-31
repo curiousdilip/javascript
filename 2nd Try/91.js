@@ -1,13 +1,16 @@
-// getter and setters
+// static methods and properties
 class person {
   constructor(firstName, lastName, age) {
     this.firstName = firstName;
     this.age = age;
     this.lastName = lastName;
   }
+  static classInfo() {
+    return "this is a person class";
+  }
 
+  static desc = "static Property";
   get fullName() {
-    //get keyword help to use method as property
     return `Your Fullname is ${this.firstName} ${this.lastName}`;
   }
 
@@ -16,18 +19,21 @@ class person {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+  eat() {
+    return `${this.firstName} is eating`;
+  }
+
+  isSuperCute() {
+    return this.age <= 1;
+  }
+
+  isCute() {
+    return true;
+  }
 }
 
 const person1 = new person("Dilip", "Kumar", 23);
-console.log(person1);
-console.log(person1.fullName);
-console.log(person1.firstName);
-console.log(person1.lastName);
-// person1.firstName = "Vishal"; //change name
-// person1.lastName = "Singh";
+console.log(person1.eat());
 
-person1.fullName = "Kumar Ramesh";
-console.log(person1);
-
-console.log(person1.firstName);
-console.log(person1.lastName);
+console.log(person.classInfo());
+console.log(person.desc);
