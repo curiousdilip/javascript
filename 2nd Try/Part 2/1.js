@@ -1,5 +1,6 @@
 // how javacsript Works overview
 
+
 // compilation
 // code execution
 
@@ -7,16 +8,18 @@
 
 // How Javscript Code Executes
 
+
 // what is global execution context?
 // what is local execution context?
 // closures
 console.log(this);
 console.log(window);
 console.log(firstName);
-var firstName = "Dilip";
-var number = 23;
+var firstName="Dilip";
+var number=23;
 
-// 1. compilation phase
+
+// 1. compile
 // - tokanizing/lexing  --> code is broken in to small parts known as tokan
 // - parsing ---> those broken parts are understood and AST(abtract Syntax tree) is formed
 // - code generation --> with the help of AST the code is created
@@ -25,6 +28,5 @@ var number = 23;
 // 1. Early Error Checking
 // 2. determing appropriate Scope for variables
 
-// 2. code execution phase
-//    in js code executes insides execution context
-// GLOBAL EXECUTION CONTEXT
+
+// 2. code execution
