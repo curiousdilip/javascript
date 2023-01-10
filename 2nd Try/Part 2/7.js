@@ -24,4 +24,4 @@ const myFunc = function () {
 // global scope
 // fname
 // lname
-// function
+// function - var1, var2
