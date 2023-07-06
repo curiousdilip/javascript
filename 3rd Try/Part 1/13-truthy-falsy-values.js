@@ -9,6 +9,11 @@
 // undefined
 // 0
 
+// truthy value
+// "abcd"
+// 1245, -3
+
+
 let firstName = "Dilip"
 if (firstName) {
     console.log(firstName);
