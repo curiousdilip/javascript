@@ -8,3 +8,10 @@
 // null
 // undefined
 // 0
+
+let firstName = "Dilip"
+if (firstName) {
+    console.log(firstName);
+} else {
+    console.log("firstName is empty");
+}
