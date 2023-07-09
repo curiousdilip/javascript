@@ -17,6 +17,12 @@ const users = [
     }
 ]
 
-const [user1, user2, user3] = users
+// const [user1, user2, user3] = users
 
-console.log(user1)
+// console.log(user1)
+
+// want to user 1 firstname and user3 gender
+
+const [{ name: user1Name }, , { gender: user3Gender }] = users
+console.log(user1Name)
+console.log(user3Gender)
