@@ -1,4 +1,4 @@
-// computed properties
+// computed properties(keys)
 
 const key1 = "objkey1"
 const key2 = "objkey2"

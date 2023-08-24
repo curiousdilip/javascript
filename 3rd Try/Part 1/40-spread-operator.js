@@ -4,8 +4,10 @@ const array1 = [1, 2, 3, 4]
 const array2 = [5, 6, 7, 8]
 
 // const newarray = [...array1, ...array2]
-const newarray = [..."abcdefghijklmnop"]//string are iterable, numbers are not
+// const newarray = [...12345]//string are iterable, numbers are not
+const newarray = [..."abcdefghijkl"]//string are iterable, numbers are not
 
+console.log(newarray)
 
 // console.log(newarray)
 
